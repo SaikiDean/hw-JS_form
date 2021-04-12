@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Převod soustav</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="jumbotron-fluid bg-primary p-5">
+        <h1 class="text-white text-center display-2">Převod soustav</h1>
+    </header>  
+    <main class="container">
+        <h2 class="bg-info text-white text-uppercase text-center p-3 mt-3">Převod soustav</h2>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="num" class="col-sm-3 col-form-label">Vámi zadané číslo</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="num" id="num" 
+                        placeholder="Zadej číslo:">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="groups" class="col-sm-3 col-form-label">Výběr soustavy</label>
+                    <div class="col-sm-3">
+                            <select class="form-control" name="choice" id="choice">
+                                <option value="bin">Do binární</option>
+                                <option value="oct">Do oktálové</option>
+                                <option value="hex">Do hexadecimální</option>
+                            </select>
+                    </div>
+                </div>
+                </div> <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-9">
+                        <button type="button" id="calc" class="btn btn-primary">Převeď</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <div id="result" class="display-4">Zde je převod vámi zadaného čísla</div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <hr>
+        <div>&copy; 2021 - IT4</div>
+    </footer>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
